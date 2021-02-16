@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.content-wrapper-box {
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+  z-index: 1;
+}
+.content-wrapper-box.footer-wrapper {
+  height: 50%;
+}
+
+section.active .content-wrapper .content {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.content-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.content-wrapper.bottom {
+  vertical-align: bottom;
+}
+.content-wrapper .content {
+  max-width: 600px;
+  float: right;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 4% 0 0;
+  transform: translate(0, 50px);
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+  transition-delay: 0.3s;
+}
+.content-wrapper .content.content-left {
+  float: left;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .content-wrapper .content {
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+}
+.content-wrapper .content h2.title {
+  letter-spacing: 1.2px;
+  margin-bottom: 12px;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.content-wrapper .content p.description {
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.content-wrapper .content .explore-btn-box {
+  margin-top: 22px;
+}
+.content-wrapper .content .explore-btn-box a span {
+  position: relative;
+  padding: 0px 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+  letter-spacing: 3px;
+}
+.content-wrapper .content .explore-btn-box a span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 3px);
+  height: 1px;
+  background-color: #edb53c;
+}
+.content-wrapper .content .explore-btn-box a span::before {
+  content: "→";
+  position: absolute;
+  right: 0px;
+  padding-left: 15px;
+  display: inline-block;
+  color: #edb53c;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.content-wrapper .content .explore-btn-box a:hover span {
+  opacity: 0.7;
+}
+.content-wrapper .content .explore-btn-box a:hover span::before {
+  right: -24px;
+  opacity: 1;
+}
+.content-wrapper .content .explore-btn-box a:hover span::after {
+  background-color: transparent;
+}
+.content-wrapper .content.upcoming-events-content {
+  width: 635px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 50px 65px;
+  margin-top: 5%;
+  border-radius: 7px;
+}
+@media (max-width: 767px) {
+  .content-wrapper .content.upcoming-events-content {
+    width: 100%;
+  }
+}
+.content-wrapper .content.upcoming-events-content .explore-btn-box a span {
+  color: #000000;
+  border-color: #edb53c;
+}
+.content-wrapper.slider-content-wrapper .slider-content {
+  transform: translate(0, 0);
+  opacity: 1;
+  margin-top: 10%;
+  margin-right: 4%;
+}
+.content-wrapper.slider-content-wrapper .slider-content h2.title {
+  font-size: 32px;
+  letter-spacing: 1.05px;
+  font-weight: 400;
+}
+.content-wrapper.slider-content-wrapper .slider-content.content-left {
+  margin-left: 4%;
+  margin-right: 0;
+}
+
+.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#fp-nav {
+  display: none;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
