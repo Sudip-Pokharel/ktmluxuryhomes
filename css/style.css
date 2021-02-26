@@ -148,6 +148,11 @@ section .content-box .button {
   justify-content: space-between;
   padding: 1rem 2rem 0;
 }
+@media (max-width: 767px) {
+  .nav {
+    justify-content: center;
+  }
+}
 .nav__logo {
   width: 140px;
 }
