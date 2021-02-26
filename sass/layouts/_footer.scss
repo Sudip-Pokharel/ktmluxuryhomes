@@ -5,6 +5,7 @@
 .footer-nav {
     
     @include flex-center();
+    flex-wrap: wrap;
     &__links {
         margin: .6rem;
         padding: .3rem;

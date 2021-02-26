@@ -157,10 +157,20 @@ section .content-box .button {
   justify-content: center;
   margin-right: -7.6rem;
 }
+@media (max-width: 767px) {
+  .nav-center {
+    display: none;
+  }
+}
 .nav-right {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .nav-right {
+    display: none;
+  }
 }
 .nav__item {
   margin: 0 1rem;
@@ -175,6 +185,7 @@ section .content-box .button {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .footer-nav__links {
   margin: 0.6rem;

@@ -20,15 +20,22 @@
 
     &-center {
         @include flex-center();
-        margin-right: -7.6rem
+        margin-right: -7.6rem;
+        @include media(767px) {
+          display:none;
+        }
     }
     
     &-right {
         @include flex-center();
+        @include media(767px) {
+          display:none;
+        }
     }
   
     &__item {
         margin: 0 1rem;
+
     }
     
     &__link {
