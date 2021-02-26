@@ -1,0 +1,55 @@
+// hide slider arrow
+.fp-controlArrow{
+    &.fp-prev,&.fp-next {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+} 
+
+// hide section nav dots
+#fp-nav {
+    display: none;
+    opacity: 0;
+}
+
+
+  
+section{
+  &.active {
+    .content-box {
+      transform: translate(0,0);
+      opacity: 1;
+      transition: .7s ease-in-out;
+      transition-delay: .4s;
+    }
+  }
+  .section-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 12rem);
+    padding: 1rem 2rem 3vh;
+
+    transform: translate(0,50px);
+    opacity: 0;
+    transition: .7s ease-in-out;
+    transition-delay: .3s;
+    &--footer {
+      width: 100%;
+      transform: translate(0,0);
+      opacity: 1;
+    }
+
+   .button {
+     margin: 1rem;
+   }
+  }
+}

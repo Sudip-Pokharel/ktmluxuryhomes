@@ -1,0 +1,24 @@
+.button {
+    padding: 1.2rem 2rem;
+    border-radius: 5rem;
+    min-width: 24rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    display: inline-block;
+    transition: all .3s;
+    &--primary {
+        background-color: rgba($color-dark,0.8);
+        color: $color-white;
+    }
+    &--secondary {
+        background-color: rgba($color-white,0.8);
+        color: $color-dark;
+    }
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        transition: all .3s;
+    }
+}

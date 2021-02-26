@@ -1,0 +1,16 @@
+.text-center {
+    text-align: center;
+}
+
+.gutterX {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.gutterY {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    &--no-bottom {
+        padding-bottom: 0;
+    }
+}

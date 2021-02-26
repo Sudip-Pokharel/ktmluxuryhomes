@@ -1,0 +1,39 @@
+// nav
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 1rem 2rem 0;
+  
+    &__logo {
+      width: 140px;
+    }
+
+    &-center {
+        @include flex-center();
+        margin-right: -7.6rem
+    }
+    
+    &-right {
+        @include flex-center();
+    }
+  
+    &__item {
+        margin: 0 1rem;
+    }
+    
+    &__link {
+        padding: .8rem;
+        font-size: 1.8rem;
+        color: $color-dark;
+    }
+  }
