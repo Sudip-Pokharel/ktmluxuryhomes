@@ -1,0 +1,6 @@
+only two heading
+	residential
+		-> HOME
+	commercial
+		->HOTEL
+		->RESORT
